@@ -8,6 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ShamCashExporter_v2
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -19,7 +23,7 @@ jobs:
           java-version: '17'
 
       - name: Grant execute permission
-        run: chmod +x ./gradlew
+        run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
@@ -28,4 +32,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: shamcash-debug-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: ShamCashExporter_v2/app/build/outputs/apk/debug/app-debug.apk
