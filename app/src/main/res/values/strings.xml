@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShamCash Exporter</string>
+    <string name="start">ابدأ</string>
+    <string name="open_accessibility_settings">افتح إعدادات إمكانية الوصول</string>
+    <string name="accessibility_desc">يستخدم هذا التطبيق خدمة إمكانية الوصول للتنقل داخل تطبيق شام كاش وقراءة العمليات الظاهرة على الشاشة وتصديرها كـ JSON.</string>
+    <string name="status_idle">الحالة: جاهز</string>
+    <string name="status_running">الحالة: يعمل… افتح تطبيق شام كاش وسيتم التصدير تلقائياً</string>
+    <string name="copy_json">نسخ JSON</string>
+    <string name="clear">مسح</string>
+    <string name="hint_package">اسم حزمة التطبيق الهدف (Package)</string>
+</resources>
